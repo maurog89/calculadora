@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculadora</title>
+</head>
+<body onload="calcular()">
+    <div class="contenedor">
+        <div class="titulo">
+            <h1>Calculadora</h1>
+        </div>
+        <div class="calculadora">
+            <div class="valorA">
+                <input type="text" id="primerValor" placeholder="Inserte el primer valor" onkeypress="return validar(event)" style="width: 200px;">
+            </div>
+            <div class="valorB">
+                <input type="text" id="segundoValor" placeholder="Inserte el segundo valor" onkeypress="return validar(event)" style="width: 200px;">
+            </div>
+            <div class="operadores">
+                <button id="resta">-</button>
+                <button id="suma">+</button>
+                <button id="multiplicacion">*</button>
+                <button id="division">/</button>
+            </div>
+            
+            <div style="width:100%; text-align:center; margin-bottom: 5%; color: rgb(248, 226, 126); font-size: larger;">
+                <label>Resultado</label>
+                <div id="resultados"></div>
+           
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+
+</html>
